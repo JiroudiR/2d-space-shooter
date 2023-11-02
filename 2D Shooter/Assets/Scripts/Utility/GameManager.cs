@@ -51,6 +51,9 @@ public class GameManager : MonoBehaviour
     
     // The number of enemies defeated in game
     private int enemiesDefeated = 0;
+    private int enemiesMissed = 0;
+    public GameObject leftBarrier;
+    public GameObject straightShooterMartian;
 
     [Tooltip("Whether or not to print debug statements about whether the game can be won or not according to the game manager's" +
         " search at start up")]
@@ -192,6 +195,18 @@ public class GameManager : MonoBehaviour
         if (enemiesDefeated >= enemiesToDefeat && gameIsWinnable)
         {
             LevelCleared();
+        }
+    }
+
+    public void EnemiesMissed()
+    {
+        enemiesMissed++;
+        if (collision.gameObject.leftBarrier.rigidBody2d == true)
+        {
+            if (collision.gameObject.straightShooterMartian != "Player")
+            {
+
+            }
         }
     }
 
