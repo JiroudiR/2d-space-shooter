@@ -51,8 +51,6 @@ public class GameManager : MonoBehaviour
     
     // The number of enemies defeated in game
     private int enemiesDefeated = 0;
-    private int enemiesMissed = 0;
-    public Collider2D leftBarrier;
 
     [Tooltip("Whether or not to print debug statements about whether the game can be won or not according to the game manager's" +
         " search at start up")]
@@ -197,19 +195,6 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void OnCollisionEnter2D(Collision2D collider)
-    {
-        Debug.Log("Please do something");
-        if (gameObject.GetComponent<Collider2D>().name == "leftBarrier")
-        {
-            Debug.Log("Do a different thing");
-            if (gameObject.GetComponent<Collider2D>().tag == "Enemy")
-            {
-                enemiesMissed++;
-                Debug.Log("Do something here");
-            }
-        }
-    }
 
     /// <summary>
     /// Description:
