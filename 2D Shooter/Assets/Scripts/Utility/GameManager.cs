@@ -52,6 +52,9 @@ public class GameManager : MonoBehaviour
     // The number of enemies defeated in game
     private int enemiesDefeated = 0;
 
+    // enemiesMissed
+    private int enemiesMissed = 0;
+
     [Tooltip("Whether or not to print debug statements about whether the game can be won or not according to the game manager's" +
         " search at start up")]
     public bool printDebugOfWinnableStatus = true;
@@ -339,6 +342,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         gameIsOver = true;
+        Time.timeScale = 0;
         if (gameOverEffect != null)
         {
             Instantiate(gameOverEffect, transform.position, transform.rotation, null);
@@ -347,6 +351,16 @@ public class GameManager : MonoBehaviour
         {
             uiManager.allowPause = false;
             uiManager.GoToPage(gameOverPageIndex);
+        }
+    }
+
+    public void EnemyMissed()
+    {
+        enemiesMissed++;
+        Debug.Log(enemiesMissed);
+        if (SceneManager.GetActiveScene().name == "Level1" && enemiesMissed == 3)
+        {
+            GameOver();
         }
     }
 }

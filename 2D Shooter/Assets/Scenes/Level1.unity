@@ -837,7 +837,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1427423323}
   - component: {fileID: 1427423322}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: RightBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -856,10 +856,10 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_LayerOverridePriority: 0
   m_ForceSendLayers:
     serializedVersion: 2
@@ -927,7 +927,7 @@ GameObject:
   - component: {fileID: 1492142564}
   - component: {fileID: 1492142566}
   - component: {fileID: 1492142567}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: LeftBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -946,7 +946,7 @@ BoxCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 128
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -988,7 +988,7 @@ Transform:
   m_GameObject: {fileID: 1492142563}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: -14.6, y: 0, z: 0}
+  m_LocalPosition: {x: -14.9, y: 0, z: 0}
   m_LocalScale: {x: 18, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1020,7 +1020,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &1492142567
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1548,6 +1548,10 @@ PrefabInstance:
     - target: {fileID: 7407803523338794918, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7407803523338794918, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8146493058656180635, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: m_BodyType
