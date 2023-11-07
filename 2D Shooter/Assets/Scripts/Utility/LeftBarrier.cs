@@ -3,16 +3,15 @@ using UnityEngine;
 public class LeftBarrier : MonoBehaviour
 {
     private bool enemiesMissed = false;
-
     public LeftBarrier(bool enemiesMissed)
     {
         this.enemiesMissed = enemiesMissed;
     }
 
-    public void OnCollisionEnter2D(Collision2D collider)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(enemiesMissed);
-        if (gameObject.GetComponent<Collider2D>().tag == "Enemy")
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             enemiesMissed = true;
             Debug.Log(enemiesMissed);
