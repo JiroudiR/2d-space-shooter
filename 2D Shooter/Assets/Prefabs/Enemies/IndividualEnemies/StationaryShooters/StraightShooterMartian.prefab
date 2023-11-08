@@ -306,4 +306,4 @@ MonoBehaviour:
   destroyAfterDamage: 0
   dealDamageOnTriggerEnter: 1
   dealDamageOnTriggerStay: 0
-  dealDamageOnCollision: 0
+  dealDamageOnCollision: 1
