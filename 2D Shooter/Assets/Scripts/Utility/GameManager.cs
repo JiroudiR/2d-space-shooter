@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour
     public void IncrementEnemiesDefeated()
     {
         enemiesDefeated++;
-        if (enemiesDefeated >= enemiesToDefeat && gameIsWinnable)
+        if (enemiesDefeated >= enemiesToDefeat && gameIsWinnable || score <= 0)
         {
             LevelCleared();
         }
@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour
     /// <param name="scoreAmount">The amount to add to the score</param>
     public static void AddScore(int scoreAmount)
     {
-        score += scoreAmount;
+        score -= scoreAmount;
         if (score > instance.highScore)
         {
             SaveHighScore();
@@ -308,6 +308,7 @@ public class GameManager : MonoBehaviour
     /// </summary>
     public void LevelCleared()
     {
+        Time.timeScale = 0;
         PlayerPrefs.SetInt("score", score);
         if (uiManager != null)
         {

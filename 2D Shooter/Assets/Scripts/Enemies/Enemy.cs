@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Device;
+using UnityEngine.InputSystem.OnScreen;
 
 /// <summary>
 /// A class which controls enemy behaviour
@@ -46,6 +48,7 @@ public class Enemy : MonoBehaviour
 
     //The direction that this enemy will try to scroll if it is set as a scrolling enemy.
     [SerializeField] private Vector3 scrollDirection = Vector3.right;
+    private bool onScreen = false;
 
     /// <summary>
     /// Description:
@@ -89,13 +92,9 @@ public class Enemy : MonoBehaviour
     /// </summary>
     private void HandleBehaviour()
     {
-        // Check if the target is in range, then move
-        if (followTarget != null && (followTarget.position - transform.position).magnitude < followRange)
-        {
-            MoveEnemy();
-        }
-        // Attempt to shoot, according to this enemy's shooting mode
+        MoveEnemy();
         TryToShoot();
+        CheckScreenPosition();
     }
 
     /// <summary>
@@ -155,15 +154,8 @@ public class Enemy : MonoBehaviour
     /// </summary>
     private void MoveEnemy()
     {
-        // Determine correct movement
-        Vector3 movement = GetDesiredMovement();
-
-        // Determine correct rotation
-        Quaternion rotationToTarget = GetDesiredRotation();
-
-        // Move and rotate the enemy
-        transform.position = transform.position + movement;
-        transform.rotation = rotationToTarget;
+        Vector3 movement = Vector3.left * moveSpeed * Time.deltaTime;
+        this.transform.position += movement;
     }
 
     /// <summary>
@@ -328,5 +320,24 @@ public class Enemy : MonoBehaviour
             }
         }
         return scrollDirection;
+    }
+
+    private void CheckScreenPosition()
+    {
+        Camera camera = Camera.main;
+        if (camera != null)
+        {
+            Vector2 screenPosition = camera.WorldToScreenPoint(transform.position);
+            Rect screenRect = camera.pixelRect;
+            if (!screenRect.Contains(screenPosition))
+            {
+                if (onScreen)
+                    Destroy(this.gameObject, 0f);
+            }
+            else
+            {
+                onScreen = true;
+            }
+        }
     }
 }
