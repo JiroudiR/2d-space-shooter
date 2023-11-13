@@ -50,7 +50,7 @@ public class GameManager : MonoBehaviour
     public int enemiesToDefeat = 10;
     
     // The number of enemies defeated in game
-    private int enemiesDefeated = 0;
+    public int enemiesDefeated = 0;
 
     // enemiesMissed
     private int enemiesMissed = 0;
@@ -192,7 +192,7 @@ public class GameManager : MonoBehaviour
     public void IncrementEnemiesDefeated()
     {
         enemiesDefeated++;
-        if (enemiesDefeated >= enemiesToDefeat && gameIsWinnable || score <= 0)
+        if (enemiesDefeated >= enemiesToDefeat && gameIsWinnable)
         {
             LevelCleared();
         }
@@ -224,7 +224,7 @@ public class GameManager : MonoBehaviour
     /// <param name="scoreAmount">The amount to add to the score</param>
     public static void AddScore(int scoreAmount)
     {
-        score -= scoreAmount;
+        score += scoreAmount;
         if (score > instance.highScore)
         {
             SaveHighScore();
