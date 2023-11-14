@@ -109,8 +109,8 @@ public class Enemy : MonoBehaviour
     /// </summary>
     public void DoBeforeDestroy()
     {
-        AddToScore();
         IncrementEnemiesDefeated();
+        AddToScore();
     }
 
     /// <summary>
