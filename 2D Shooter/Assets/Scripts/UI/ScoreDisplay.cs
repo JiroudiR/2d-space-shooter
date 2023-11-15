@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using TMPro;
 
 /// <summary>
@@ -11,6 +12,7 @@ public class ScoreDisplay : UIelement
 {
     [Tooltip("The text UI to use for display")]
     public TMP_Text displayText = null;
+    public TMP_Text strikeText = null;
 
     /// <summary>
     /// Description:
@@ -29,6 +31,28 @@ public class ScoreDisplay : UIelement
         }
     }
 
+    public void DisplayStrikes()
+    {
+        int strikeScore = 3;
+        if (strikeText != null)
+        {
+            
+            if (SceneManager.GetActiveScene().name == "Level1")
+            {
+                strikeScore = 3;
+            } else if (SceneManager.GetActiveScene().name == "Level2")
+            {
+                strikeScore = 2;
+            } else if (SceneManager.GetActiveScene().name == "Level3")
+            {
+                strikeScore = 1;
+            }
+            int strikeTotal = strikeScore - GameManager.instance.enemiesMissed;
+            Debug.Log("Strike: " + strikeTotal);
+            strikeText.text = "Strikes Left: " + strikeTotal.ToString();
+        }
+    }
+
     /// <summary>
     /// Description:
     /// Overides the virtual UpdateUI function and uses the DisplayScore to update the score display
@@ -44,5 +68,6 @@ public class ScoreDisplay : UIelement
 
         // The remaining code is only called for this sub-class of UIelement and not others
         DisplayScore();
+        DisplayStrikes();
     }
 }

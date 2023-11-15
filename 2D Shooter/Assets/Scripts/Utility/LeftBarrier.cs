@@ -8,6 +8,8 @@ public class LeftBarrier : MonoBehaviour
         {
             GameManager manager = FindObjectOfType<GameManager>();
             manager.EnemyMissed();
+            UIManager uIManager = FindObjectOfType<UIManager>();
+            uIManager.UpdateUI();
         }        
     }
 }
