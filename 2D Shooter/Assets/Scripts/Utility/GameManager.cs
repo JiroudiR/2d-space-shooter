@@ -362,6 +362,9 @@ public class GameManager : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "Level1" && enemiesMissed == 3)
         {
             GameOver();
+        } else if (SceneManager.GetActiveScene().name == "Level2" && enemiesMissed == 2)
+        {
+            GameOver();
         }
     }
 }
