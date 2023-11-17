@@ -27,7 +27,7 @@ public class ScoreDisplay : UIelement
         if (displayText != null)
         {
             int enemiesLeft = GameManager.instance.enemiesToDefeat - GameManager.instance.enemiesDefeated;
-            displayText.text = "Enemies Left: " + enemiesLeft.ToString();
+            displayText.text = "Martians Left: " + enemiesLeft.ToString();
         }
     }
 
