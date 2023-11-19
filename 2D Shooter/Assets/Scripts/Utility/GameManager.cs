@@ -358,12 +358,13 @@ public class GameManager : MonoBehaviour
     public void EnemyMissed()
     {
         enemiesMissed++;
-        Debug.Log(enemiesMissed);
         if (SceneManager.GetActiveScene().name == "Level1" && enemiesMissed == 3)
         {
             GameOver();
         } else if (SceneManager.GetActiveScene().name == "Level2" && enemiesMissed == 2)
         {
+            GameOver();
+        } else if (SceneManager.GetActiveScene().name == "Level3" && enemiesMissed == 1){
             GameOver();
         }
     }

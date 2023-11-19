@@ -48,7 +48,6 @@ public class ScoreDisplay : UIelement
                 strikeScore = 1;
             }
             int strikeTotal = strikeScore - GameManager.instance.enemiesMissed;
-            Debug.Log("Strike: " + strikeTotal);
             strikeText.text = "Strikes Left: " + strikeTotal.ToString();
         }
     }

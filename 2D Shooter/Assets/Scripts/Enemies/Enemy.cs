@@ -332,7 +332,13 @@ public class Enemy : MonoBehaviour
             if (!screenRect.Contains(screenPosition))
             {
                 if (onScreen)
+                {
+                    GameManager manager = FindObjectOfType<GameManager>();
+                    manager.EnemyMissed();
+                    UIManager uIManager = FindObjectOfType<UIManager>();
+                    uIManager.UpdateUI();
                     Destroy(this.gameObject, 0f);
+                }
             }
             else
             {
