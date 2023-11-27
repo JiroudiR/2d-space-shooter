@@ -942,6 +942,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: {fileID: 0}
   strikeText: {fileID: 904186295}
+  bossText: {fileID: 0}
+  bossMartianEmperor: {fileID: 0}
 --- !u!114 &904186295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2516,6 +2518,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   displayText: {fileID: 1827315971}
   strikeText: {fileID: 0}
+  bossText: {fileID: 0}
+  bossMartianEmperor: {fileID: 0}
 --- !u!4 &1955188653 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7007593855796071612, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
@@ -2641,7 +2645,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693171810144249105, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: moveSpeed
-      value: 12
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5693171810144249105, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: myRigidbody
@@ -2657,7 +2661,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6454742374277622933, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6454742374277622933, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: fireEffect

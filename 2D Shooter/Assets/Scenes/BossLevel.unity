@@ -980,7 +980,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8282131553695226666, guid: 04a9a4a0f6aa3074ab31e1eea330b8e6, type: 3}
       propertyPath: fireRate
-      value: 0.00000001
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 8282131553695226666, guid: 04a9a4a0f6aa3074ab31e1eea330b8e6, type: 3}
       propertyPath: m_Enabled
@@ -2398,7 +2398,7 @@ MonoBehaviour:
   displayText: {fileID: 0}
   strikeText: {fileID: 0}
   bossText: {fileID: 1827315971}
-  BossMartianEmperor: {fileID: 0}
+  bossMartianEmperor: {fileID: 933028339}
 --- !u!1001 &2054905900
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2508,6 +2508,10 @@ PrefabInstance:
       propertyPath: currentLives
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 575195341926590164, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
+      propertyPath: isAlwaysInvincible
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5693171810144249105, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: aimMode
       value: 1
@@ -2530,7 +2534,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6454742374277622933, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: fireRate
-      value: 0.5
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6454742374277622933, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: fireEffect

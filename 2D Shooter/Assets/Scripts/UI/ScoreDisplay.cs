@@ -56,9 +56,9 @@ public class ScoreDisplay : UIelement
 
     public void DisplayBoss()
     {
-        if (bossText != null)
+        if (bossText != null && bossMartianEmperor != null)
         {
-            int bossCurrentHealth = bossMartianEmperor.GetComponent<Health>();
+            int bossCurrentHealth = bossMartianEmperor.GetComponent<Health>().currentHealth;
             bossText.text = "Martian Emperor Health: " + bossCurrentHealth.ToString();
         }
     }

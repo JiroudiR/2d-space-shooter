@@ -137,6 +137,8 @@ public class Health : MonoBehaviour
             isInvincableFromDamage = true;
             currentHealth -= damageAmount;
             CheckDeath();
+            UIManager uIManager = FindObjectOfType<UIManager>();
+            uIManager.UpdateUI();
         }
     }
 
