@@ -3,7 +3,11 @@ guid: cba48a641e7263d448df21f15f8770d2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - uiManager: {fileID: 6816893148955959799, guid: 1c0df30cd27710240931e8cee3eaa949, type: 3}
+  - player: {fileID: 7407803523338794918, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
+  - victoryEffect: {fileID: 6671380785883311296, guid: 1dbb1fe3f1006ce4b89f203ed833e04e, type: 3}
+  - gameOverEffect: {fileID: 3623134921759700094, guid: bfc99d98d6418b04590bafbb9ddc8cd5, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

@@ -13,6 +13,8 @@ public class ScoreDisplay : UIelement
     [Tooltip("The text UI to use for display")]
     public TMP_Text displayText = null;
     public TMP_Text strikeText = null;
+    public TMP_Text bossText = null;
+    public GameObject bossMartianEmperor;
 
     /// <summary>
     /// Description:
@@ -52,6 +54,15 @@ public class ScoreDisplay : UIelement
         }
     }
 
+    public void DisplayBoss()
+    {
+        if (bossText != null)
+        {
+            int bossCurrentHealth = bossMartianEmperor.GetComponent<Health>();
+            bossText.text = "Martian Emperor Health: " + bossCurrentHealth.ToString();
+        }
+    }
+
     /// <summary>
     /// Description:
     /// Overides the virtual UpdateUI function and uses the DisplayScore to update the score display
@@ -68,5 +79,6 @@ public class ScoreDisplay : UIelement
         // The remaining code is only called for this sub-class of UIelement and not others
         DisplayScore();
         DisplayStrikes();
+        DisplayBoss();
     }
 }

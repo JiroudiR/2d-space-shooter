@@ -502,7 +502,7 @@ PrefabInstance:
       objectReference: {fileID: 1955188653}
     - target: {fileID: 5292850142823210606, guid: 808e2a94a2f08464bb312ea2ca604e21, type: 3}
       propertyPath: spawnDelay
-      value: 1.25
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 5292850142823210606, guid: 808e2a94a2f08464bb312ea2ca604e21, type: 3}
       propertyPath: enemyPrefab
@@ -1053,7 +1053,7 @@ PrefabInstance:
       objectReference: {fileID: 1955188653}
     - target: {fileID: 5193187741851290256, guid: 8eb58a6c59d88b04f9fde295f2752f1b, type: 3}
       propertyPath: spawnDelay
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5193187741851290256, guid: 8eb58a6c59d88b04f9fde295f2752f1b, type: 3}
       propertyPath: enemyPrefab
@@ -2641,7 +2641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5693171810144249105, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: moveSpeed
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 5693171810144249105, guid: e4c379865ed69a240abf6e88e1fcf3ee, type: 3}
       propertyPath: myRigidbody
@@ -2923,7 +2923,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6287350983671065589, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Level2
+      value: Level3
       objectReference: {fileID: 0}
     - target: {fileID: 6369252025652671652, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_Name

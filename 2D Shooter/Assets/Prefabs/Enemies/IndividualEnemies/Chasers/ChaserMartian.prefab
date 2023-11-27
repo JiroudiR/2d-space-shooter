@@ -11,11 +11,12 @@ GameObject:
   - component: {fileID: 111767558614867184}
   - component: {fileID: 111767558614867191}
   - component: {fileID: 111767558614867190}
-  - component: {fileID: 111767558614867185}
+  - component: {fileID: 2589134998387865540}
   - component: {fileID: 2029536735206158367}
   - component: {fileID: 5724781533654324104}
   - component: {fileID: 8890150608144808246}
   - component: {fileID: 4413798097735496473}
+  - component: {fileID: 4498926717280036247}
   m_Layer: 7
   m_Name: ChaserMartian
   m_TagString: Enemy
@@ -111,7 +112,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &111767558614867185
+--- !u!114 &2589134998387865540
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -120,15 +121,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 111767558614867189}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 86999d6afe103ad4c881a51052cc6b35, type: 3}
+  m_Script: {fileID: 11500000, guid: 88be2af943f9d5146a2f6cc540fb1c1c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  moveSpeed: 15
   scoreValue: 1
   followTarget: {fileID: 0}
   followRange: 100
   guns: []
-  shootMode: 1
+  shootMode: 0
   movementMode: 1
   scrollDirection: {x: 1, y: 0, z: 0}
 --- !u!114 &2029536735206158367
@@ -255,3 +256,23 @@ MonoBehaviour:
   dealDamageOnTriggerEnter: 1
   dealDamageOnTriggerStay: 0
   dealDamageOnCollision: 1
+--- !u!114 &4498926717280036247
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 111767558614867189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86999d6afe103ad4c881a51052cc6b35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 0
+  scoreValue: 0
+  followTarget: {fileID: 0}
+  followRange: 0
+  guns: []
+  shootMode: 1
+  movementMode: 1
+  scrollDirection: {x: 0, y: 0, z: 0}
