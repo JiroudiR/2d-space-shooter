@@ -613,7 +613,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level1
+          m_StringArgument: Level3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &788305593
@@ -765,7 +765,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 100, y: 0}
+  m_AnchoredPosition: {x: 100, y: -2}
   m_SizeDelta: {x: 130, y: 130}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &871114985
@@ -2283,7 +2283,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 380, y: 0}
+  m_AnchoredPosition: {x: 380, y: -8.000034}
   m_SizeDelta: {x: 600, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1827315971
@@ -2713,6 +2713,27 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 297866960053079554, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_text
+      value: 'MISSION ACCOMPLISHED!
+
+        Congrats, soldier!
+
+        You''ve
+        done the impossible! Report back to Earth, the President is awaiting you!'
+      objectReference: {fileID: 0}
+    - target: {fileID: 297866960053079554, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_fontSize
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 297866960053079554, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 297866960053079554, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_enableAutoSizing
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3698879776041935340, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_Name
       value: InGameUICanvas
@@ -2720,6 +2741,18 @@ PrefabInstance:
     - target: {fileID: 3698879776041935340, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758305752948782780, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758305752948782780, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 3758305752948782780, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 4313004575805797426, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -2825,6 +2858,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuText
       objectReference: {fileID: 0}
+    - target: {fileID: 6539050577278986399, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6952691618402054344, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_Name
       value: NextLevelText
@@ -2853,6 +2890,7 @@ PrefabInstance:
     m_RemovedGameObjects:
     - {fileID: 1912761001449988083, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
     - {fileID: 7346187745669870599, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+    - {fileID: 2393457208341885572, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 6073560183954548773, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       insertIndex: -1

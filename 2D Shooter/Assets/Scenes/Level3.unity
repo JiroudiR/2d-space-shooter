@@ -497,7 +497,7 @@ PrefabInstance:
       objectReference: {fileID: 4745401122220846268}
     - target: {fileID: 5292850142823210606, guid: 808e2a94a2f08464bb312ea2ca604e21, type: 3}
       propertyPath: spawnDelay
-      value: 1.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5292850142823210606, guid: 808e2a94a2f08464bb312ea2ca604e21, type: 3}
       propertyPath: enemyPrefab
@@ -842,7 +842,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level1
+          m_StringArgument: Level3
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &788305593
@@ -3089,6 +3089,10 @@ PrefabInstance:
     - target: {fileID: 6517485823793702831, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_Name
       value: MainMenuText
+      objectReference: {fileID: 0}
+    - target: {fileID: 6539050577278986399, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6952691618402054344, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_Name

@@ -2805,6 +2805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MainMenuText
       objectReference: {fileID: 0}
+    - target: {fileID: 6539050577278986399, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6952691618402054344, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_Name
       value: NextLevelText
