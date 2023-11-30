@@ -2758,6 +2758,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -35
       objectReference: {fileID: 0}
+    - target: {fileID: 4680002835576399420, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
+      propertyPath: m_text
+      value: PILOT DOWN! MISSION ABORT!
+      objectReference: {fileID: 0}
     - target: {fileID: 4713906022278428276, guid: c4469947bf3d6754fbcaf8ed3e639230, type: 3}
       propertyPath: m_IsActive
       value: 0

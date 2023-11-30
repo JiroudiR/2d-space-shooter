@@ -4215,9 +4215,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "But be aware, allowing too many Martian vessels to pass you will engage
+  m_text: 'But be aware, allowing too many Martian vessels to pass you will engage
     Earth in a disadvantageous battle against a nation with significantly superior
-    technology and firepower, rendering the defense mission a failure. \nGood luck."
+    technology and firepower, rendering the defense mission a failure. You will take
+    pitstops at our lunar base and Orion and Polaris stations near Mars.
+
+    Good
+    luck.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 6a394c25692068743b7809982f11ac77, type: 2}
   m_sharedMaterial: {fileID: -7032652781229842170, guid: 6a394c25692068743b7809982f11ac77, type: 2}
